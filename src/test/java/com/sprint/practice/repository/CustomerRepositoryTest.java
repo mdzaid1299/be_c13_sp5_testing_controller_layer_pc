@@ -50,6 +50,7 @@ public class CustomerRepositoryTest {
     @Test
     public void fetchAllCustomer(){
         List<Customer> customers = customerRepository.findAll();
+
         assertEquals(1,customers.size());
         assertNotEquals(1,customers.size());
         assertEquals("Arjun",customers.get(0).getCustomerName());
