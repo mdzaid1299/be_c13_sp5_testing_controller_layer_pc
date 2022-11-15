@@ -27,7 +27,7 @@ public class CustomerRepositoryTest {
     @BeforeEach
     public void setUp(){
         product = new Product(11,"product1","This Is A Product");
-        customer = new Customer(11,"Arjun",645734,product);
+        customer = new Customer(11,"Haider",645734,product);
 
     }
 
@@ -53,8 +53,8 @@ public class CustomerRepositoryTest {
 
         assertEquals(1,customers.size());
         assertNotEquals(1,customers.size());
-        assertEquals("Arjun",customers.get(0).getCustomerName());
-        assertNotEquals("Ram",customers.get(0).getCustomerName());
+        assertEquals("Haider",customers.get(0).getCustomerName());
+        assertNotEquals("Jamuna",customers.get(0).getCustomerName());
     }
 
     @Test
